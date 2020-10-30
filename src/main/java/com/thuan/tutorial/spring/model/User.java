@@ -1,4 +1,4 @@
-package com.boraji.tutorial.spring.model;
+package com.thuan.tutorial.spring.model;
 
 public class User {
    private String email;

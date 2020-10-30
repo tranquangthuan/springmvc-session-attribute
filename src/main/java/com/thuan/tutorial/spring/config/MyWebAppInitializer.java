@@ -1,4 +1,4 @@
-package com.boraji.tutorial.spring.config;
+package com.thuan.tutorial.spring.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

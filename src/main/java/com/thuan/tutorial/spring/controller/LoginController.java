@@ -1,4 +1,4 @@
-package com.boraji.tutorial.spring.controller;
+package com.thuan.tutorial.spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.boraji.tutorial.spring.model.User;
+import com.thuan.tutorial.spring.model.User;
 
 @Controller
 @SessionAttributes("user")
@@ -29,11 +29,11 @@ public class LoginController {
 	public String doLogin(@ModelAttribute("user") User user, Model model) {
 
 		// Implement your business logic
-		if (user.getEmail().equals("sunil@example.com") && user.getPassword().equals("abc@123")) {
+		if (user.getEmail().equals("thuan") && user.getPassword().equals("123")) {
 			// Set user dummy data
-			user.setFname("Sunil");
-			user.setMname("Singh");
-			user.setLname("Bora");
+			user.setFname("Thuan");
+			user.setMname("Tran");
+			user.setLname("Quang");
 			user.setAge(28);
 		} else {
 			model.addAttribute("message", "Login failed. Try again.");
